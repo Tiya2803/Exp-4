@@ -3,26 +3,20 @@
 
 #include <iostream>
 
-int main() {
-    char a;
-    int b;
-    short int c;
-    long int d;
-    float e;
-    double f;
-    long double g;
-    bool h;
-    wchar_t i;
-
-    std::cout << "Size of char: " << sizeof(a) << " byte" << std::endl;
-    std::cout << "Size of int: " << sizeof(b) << " bytes" << std::endl;
-    std::cout << "Size of short int: " << sizeof(c) << " bytes" << std::endl;
-    std::cout << "Size of long int: " << sizeof(d) << " bytes" << std::endl;
-    std::cout << "Size of float: " << sizeof(e) << " bytes" << std::endl;
-    std::cout << "Size of double: " << sizeof(f) << " bytes" << std::endl;
-    std::cout << "Size of long double: " << sizeof(g) << " bytes" << std::endl;
-    std::cout << "Size of bool: " << sizeof(h) << " byte" << std::endl;
-    std::cout << "Size of wchar_t: " << sizeof(i) << " bytes" << std::endl;
-
-    return 0;
+int main()
+{
+    int a = 5, b = 3;
+    int AND = a&b;
+    int OR = a|b;
+    int XOR = a^b;
+    int NOT = ~a;
+    int LEFT_SHIFT = a<<b;
+    int RIGHT_SHIFT = a>>b;
+    
+    cout<<"AND:"<<AND<<endl;
+    cout<<"OR:"<<OR<<endl;
+    cout<<"XOR:"<<XOR<<endl;
+    cout<<"NOT:"<<NOT<<endl;
+    cout<<"LEFT_SHIFT:"<<LEFT_SHIFT<<endl;
+    cout<<"RIGHT_SHIFT:"<<RIGHT_SHIFT<<endl;
 }
